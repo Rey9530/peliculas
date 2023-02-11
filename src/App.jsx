@@ -1,9 +1,16 @@
 import React from "react";
-import ListRoutes from "./components/ListRoutes"; 
+import ListRoutes from "./components/ListRoutes";
+import MainContainer from "./components/MainContainer";
+import Navbar from "./components/Navbar";
 
 function App(props) {
-  return ( 
-      <ListRoutes /> 
+  return (
+    <>
+      <Navbar />
+      <MainContainer>
+        <ListRoutes />
+      </MainContainer>
+    </>
   );
 }
 
