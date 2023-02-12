@@ -1,8 +1,6 @@
 import React from "react";
 import ItemMenu from "./ItemMenu";
-import { faVideoCamera, faHome } from '@fortawesome/free-solid-svg-icons'
-import ListRoutes from "./ListRoutes";
-
+import { faVideoCamera, faHome,faTicket, faStar, faClapperboard } from '@fortawesome/free-solid-svg-icons' ;
 function SideBar(props) {
 
   const routes = [
@@ -18,6 +16,29 @@ function SideBar(props) {
       title:"Peliculas",
       icon:faVideoCamera, 
       url:"/peliculas",
+      isActive:false,
+    },
+    {
+      id:3,
+      title:"En Carteleras",
+      icon:faTicket, 
+      url:"/peliculas_carteleras",
+      isActive:false,
+    }
+    ,
+    {
+      id:4,
+      title:"Mejor Calificadas",
+      icon:faStar, 
+      url:"/peliculas_top_rate",
+      isActive:false,
+    }
+    ,
+    {
+      id:5,
+      title:"Proximamente",
+      icon:faClapperboard, 
+      url:"/peliculas_proximamente",
       isActive:false,
     }
   ];
