@@ -1,6 +1,7 @@
 import React from "react";
 import ItemMenu from "./ItemMenu";
 import { faVideoCamera, faHome } from '@fortawesome/free-solid-svg-icons'
+import ListRoutes from "./ListRoutes";
 
 function SideBar(props) {
 
@@ -22,7 +23,7 @@ function SideBar(props) {
   ];
   const menu = routes.map( (key, value)=> <ItemMenu key={key.id} item={key} /> );
   return (
-    <>
+    <> 
       <div className="sidebar-wrapper sidebar-theme">
         <nav id="sidebar">
           <div className="navbar-nav theme-brand flex-row  text-center">
