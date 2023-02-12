@@ -1,11 +1,12 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import { URL_IMAGES } from "../utils/env";
 
 function PeliculaItem({pelicula}) {
     const url =URL_IMAGES+pelicula.poster_path;
   return (
     <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
-      <a className="card style-6" href="./app-ecommerce-product.html">
+      <NavLink className="card style-6" to={"/peliculas/"+pelicula.id}>
         <span className="badge badge-primary">{pelicula.vote_average}</span>
         <img
           src={url}
@@ -25,7 +26,7 @@ function PeliculaItem({pelicula}) {
           </div>
         </div>
         <p className="card-text m-2 ">{(pelicula.overview).slice(0,100)}...</p>
-      </a>
+      </NavLink>
     </div>
   );
 }
