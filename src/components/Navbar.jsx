@@ -4,20 +4,18 @@ function Navbar(props) {
     return (
         <div className="header-container container-xxl">
         <header className="header navbar navbar-expand-sm expand-header">
-
-            <a href="#!" className="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
-            
+ 
             <ul className="navbar-item theme-brand flex-row  text-center">
                 <li className="nav-item theme-logo">
                     <a href="index.html">
-                        <img src="/assets/img/logo2.svg" className="navbar-logo" alt="logo" />
+                        <img src="/assets/img/logo2.png" className="navbar-logo" alt="logo" />
                     </a>
                 </li>
                 <li className="nav-item theme-text">
-                    <a href="index.html" className="nav-link"> CORK </a>
+                    <a href="index.html" className="nav-link"> PeliApp </a>
                 </li>
             </ul>
-
+{/* 
             <div className="search-animated toggle-search">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 <form className="form-inline search-full form-inline search" role="search">
@@ -27,9 +25,9 @@ function Navbar(props) {
                     </div>
                 </form>
                 <span className="badge badge-secondary">Ctrl + /</span>
-            </div>
+            </div> */}
 
-            <ul className="navbar-item flex-row ms-lg-auto ms-0 action-area">
+            {/* <ul className="navbar-item flex-row ms-lg-auto ms-0 action-area">
 
                 <li className="nav-item dropdown language-dropdown">
                     <a href="#!" className="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -210,7 +208,7 @@ function Navbar(props) {
                     </div>
                     
                 </li>
-            </ul>
+            </ul> */}
         </header>
     </div>
     );
