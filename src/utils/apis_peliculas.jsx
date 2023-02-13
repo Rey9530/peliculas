@@ -52,7 +52,7 @@ export const getUpcoming = async (page=1) => {
 }
 export const getSeacrhMovie = async (query="",page=1) => { 
     try { 
-        const { data } = await clientApi.get('search/movie?region=US&include_adult=false&query='+query+'&page='+page) ;
+        const { data } = await clientApi.get('search/movie?include_adult=true&query='+query+'&page=1') ;
         return data 
     } catch (error) {  
         console.log(error) ; 
