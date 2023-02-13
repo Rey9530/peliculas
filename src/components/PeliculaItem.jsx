@@ -3,7 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import { URL_IMAGES } from "../utils/env";
 
 function PeliculaItem({pelicula}) {
-    const url =URL_IMAGES+pelicula.poster_path;
+  let url;
+  if(pelicula.poster_path!=null){
+      url =URL_IMAGES+pelicula.poster_path;
+    }else{
+      url ="/assets/img/notfont.webp";
+    }
   return (
     <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
       <NavLink className="card style-6" to={"/peliculas/"+pelicula.id}>

@@ -37,6 +37,13 @@ function PeliculaDetail(props) {
       alt="image-1"
       className="img-fluid"
     />;
+  }else{
+    imagen =<img
+    src="/assets/img/notfont.webp"
+    alt="image-1"
+    className="img-fluid"
+  />;
+
   }
 
 
