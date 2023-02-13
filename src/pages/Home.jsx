@@ -3,15 +3,13 @@ import PeliculaItem from "../components/PeliculaItem";
 import { getSeacrhMovie } from "../utils/apis_peliculas";
 
 function Home(props) {
-  const [peliculas, setpeliculas] = useState([]);
-  const [pagina, setpagina] = useState(1);
+  const [peliculas, setpeliculas] = useState([]); 
   const [shearch, setShearch] = useState("");
   const [loading, setloading] = useState(false);
 
   function cargarMas() {
-    setloading(true);
-    setpagina(pagina + 1);
-    getSeacrhMovie(shearch, pagina).then((data) => {
+    setloading(true); 
+    getSeacrhMovie(shearch).then((data) => {
       setpeliculas(data.results);
       setloading(false);
     });
