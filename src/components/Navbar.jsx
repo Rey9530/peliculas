@@ -7,7 +7,7 @@ function Navbar(props) {
  
             <ul className="navbar-item theme-brand flex-row  text-center">
                 <li className="nav-item theme-logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="/assets/img/logo2.png" className="navbar-logo" alt="logo" />
                     </a>
                 </li>
